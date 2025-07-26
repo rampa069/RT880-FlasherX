@@ -11,5 +11,6 @@ You need to make the program file executable (by adding the +x file permission)
 You need to also give yourself access to serial ports, on Linux this is by adding yourself to the 'dialout' group  
 *sudo usermod -a -G dialout your_username*
   
-On OSX I have no idea, I do not have Mac and never will.
+On macOS, you may need to remove the quarantine attribute from the downloaded app bundle:  
+*sudo xattr -rd com.apple.quarantine RT880-FlasherX.app*
 
