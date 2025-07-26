@@ -6,6 +6,7 @@ namespace RT880_FlasherX
 {
     public partial class App : Application
     {
+        public static MainWindow? MainWindow { get; private set; }
         public override void Initialize()
         {
             AvaloniaXamlLoader.Load(this);
@@ -15,7 +16,8 @@ namespace RT880_FlasherX
         {
             if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
             {
-                desktop.MainWindow = new MainWindow();
+                MainWindow = new MainWindow();
+                desktop.MainWindow = MainWindow;
             }
 
             base.OnFrameworkInitializationCompleted();
