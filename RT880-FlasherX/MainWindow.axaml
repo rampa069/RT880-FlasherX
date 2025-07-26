@@ -1,0 +1,30 @@
+<Window
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="RT880_FlasherX.MainWindow"
+    Title="RT-880 Firmware Flasher"
+    Width="400"
+    Height="400">
+
+	<StackPanel Margin="20" Spacing="10">
+		<TextBlock Text="Select Serial Port"/>
+		<ComboBox x:Name="PortComboBox" Width="200" Margin="0,-8,0,0"/>
+
+		<TextBlock Text="Select Radio Model"/>
+		<ComboBox Margin="0,-8,0,0" Name="ModelComboBox" Width="150" SelectedIndex="0">
+			<ComboBoxItem Content="Radtel RT-800" />
+			<ComboBoxItem Content="iRadio UV-98" />
+		</ComboBox>		
+		
+		<TextBlock Text="Select Firmware File"/>
+		<Button Margin="0,-8,0,0" x:Name="SelectFileButton" Content="Browse..." Width="100"/>
+
+		<TextBlock Margin="0,-8,0,0" x:Name="SelectedFileLabel" Text="No file selected."/>
+
+		<Button x:Name="FlashButton" Content="Flash Firmware" Width="150"/>
+		<Button x:Name="AbortButton" IsEnabled="False" Content="Abort" Width="150"/>
+
+		<ProgressBar x:Name="FlashProgressBar" Minimum="0" Maximum="100" Height="20"/>
+		<TextBlock x:Name="StatusTextBlock" Text="Status: Ready" />
+	</StackPanel>
+</Window>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.36105.23 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RT880-FlasherX", "RT880-FlasherX\RT880-FlasherX.csproj", "{BB133BB3-16CE-4C67-A8BB-F340F7092F5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB133BB3-16CE-4C67-A8BB-F340F7092F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB133BB3-16CE-4C67-A8BB-F340F7092F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB133BB3-16CE-4C67-A8BB-F340F7092F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB133BB3-16CE-4C67-A8BB-F340F7092F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8EA3A85A-1023-45DF-98F7-1C46EA80D784}
+	EndGlobalSection
+EndGlobal
